@@ -1,0 +1,98 @@
+@import "../../colors";
+
+.header {
+	.header-main {
+		height: 8rem;
+
+		.col-md-4 {
+			padding: 0;
+		}
+
+		.search-form {
+			position: relative;
+
+			&::before {
+	        	position: absolute;
+		        top: 0;
+		        right: 1rem;
+
+		        width: 3rem;
+		        height: 3rem;
+
+		        font-family: "FontAwesome";
+		        line-height: 3rem;
+  				content: "\f002";
+		        text-align: center;
+		        font-size: 1.4rem;
+		        color: $firstTextColor;
+		    }
+
+		    .search-form__button {
+		        position: absolute;
+		        top: 0;
+		        right: 1rem;
+		        width: 3rem;
+		        height: 3rem;
+		        opacity: 0;
+		        cursor: pointer;
+	        }
+		}
+
+		.signin-button {
+			font-size: 1.6rem;
+			background-color: $firstBGColor;
+			border: 1px solid transparent;
+			color: white;
+		}
+
+		.signup-button {
+			font-size: 1.6rem;
+			background-color: transparent;
+			border: 1px solid $firstBGColor;
+			color: $firstBGColor;
+		}
+
+		.logo {
+			height: 4rem;
+			width: auto;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+	.header-categories {
+		background-color: $firstBGColor;
+		border-radius: 0.25rem;
+
+		.category {
+			font-size: 1.4rem;
+			color: white;
+			text-decoration: none;
+			position: relative;
+
+			&:after {
+			  	content: '';
+			  	position: absolute;
+			  	left: 0;
+			  	display: inline-block;
+			  	height: 0.85em;
+			  	width: 100%;
+			  	border-bottom: 1px solid;
+			  	margin-top: 10px;
+			 	opacity: 0;
+				-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+				transition: opacity 0.35s, transform 0.35s;
+				-webkit-transform: scale(0,1);
+				transform: scale(0,1);
+			}
+
+			&:hover:after {
+			  	opacity: 1;
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+		}
+	}
+}

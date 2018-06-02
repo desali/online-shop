@@ -1,9 +1,73 @@
-<navbar></navbar>
-<header>
-  <hero></hero>
-</header>
-<main>
-  <div>
-    <h1>Found in {{ $ctrl.name }}.html</h1>
+<div class="home w-100 h-auto">
+  <header class="mb-4"></header>
+
+  <div class="main w-100 d-flex flex-column align-items-center justify-content-center mb-5">
+	  <div class="categories w-100 d-flex align-items-between justify-content-between flex-wrap mb-5">
+		  <div class="col-md-4 p-2">
+		  	<div ui-sref="catalog" class="category w-100 h-100 d-flex flex-column align-items-center justify-content-around">
+		  		<img class="category-image w-auto h-75" alt="laptop" src="assets/images/laptop.png">
+		  		<span class="category-title">Ноутбуки</span>
+		  	</div>
+		  </div>
+		  <div class="col-md-4 p-2">
+		  	<div ui-sref="catalog" class="category w-100 h-100 d-flex flex-column align-items-center justify-content-around">
+		  		<img class="category-image w-auto h-75" alt="photocamera" src="assets/images/camera.png">
+		  		<span class="category-title">Фотоаппараты</span>
+		  	</div>
+		  </div>
+		  <div class="col-md-4 p-2">
+		  	<div class="category w-100 h-100 d-flex flex-column align-items-center justify-content-around">
+		  		<img class="category-image w-auto h-75" alt="earphone" src="assets/images/earphone.png">
+		  		<span class="category-title">Наушники</span>
+		  	</div>
+		  </div>
+		  <div class="col-md-4 p-2">
+		  	<div ui-sref="catalog" class="category w-100 h-100 d-flex flex-column align-items-center justify-content-around">
+		  		<img class="category-image w-auto h-75" alt="kettle" src="assets/images/kettle.png">
+		  		<span class="category-title">Бытовая техника</span>
+		  	</div>
+		  </div>
+		  <div class="col-md-4 p-2">
+		  	<div ui-sref="catalog" class="category w-100 h-100 d-flex flex-column align-items-center justify-content-around">
+		  		<img class="category-image w-auto h-75" alt="smartphone" src="assets/images/smartphone.png">
+		  		<span class="category-title">Смартфоны</span>
+		  	</div>
+		  </div>
+		  <div class="col-md-4 p-2">
+		  	<div ui-sref="catalog" class="category w-100 h-100 d-flex flex-column align-items-center justify-content-around">
+		  		<img class="category-image w-auto h-75" alt="watch" src="assets/images/watch.png">
+		  		<span class="category-title">Часы</span>
+		  	</div>
+		  </div>
+	  </div>
+
+
+	  <div class="brands w-100 d-flex align-items-center">
+	  	<div class="col brand h-75 d-flex align-items-center justify-content-center">
+	  		<img ui-sref="catalog" class="brand-logo w-auto h-auto" alt="google" src="assets/images/google-logo.png">
+	  	</div>
+	  	<div class="col brand h-75 d-flex align-items-center justify-content-center">
+	  		<img ui-sref="catalog" class="brand-logo w-auto h-auto" alt="xiaomi" src="assets/images/xiaomi-logo.png">
+	  	</div>
+	  	<div class="col brand h-75 d-flex align-items-center justify-content-center">
+	  		<img ui-sref="catalog" class="brand-logo w-auto h-auto" alt="nexus" src="assets/images/nexus-logo.png">
+	  	</div>
+	  	<div class="col brand h-75 d-flex align-items-center justify-content-center">
+	  		<img ui-sref="catalog" class="brand-logo w-auto h-auto" alt="samsung" src="assets/images/samsung-logo.png">
+	  	</div>
+	  	<div class="col brand h-75 d-flex align-items-center justify-content-center">
+	  		<img ui-sref="catalog" class="brand-logo w-auto h-auto" alt="lg" src="assets/images/lg-logo.png">
+	  	</div>
+	  	<div class="col brand h-75 d-flex align-items-center justify-content-center">
+	  		<img ui-sref="catalog" class="brand-logo w-auto h-auto" alt="sony" src="assets/images/sony-logo.png">
+	  	</div>
+	  	<div class="col brand h-75 d-flex align-items-center justify-content-center">
+	  		<img ui-sref="catalog" class="brand-logo w-auto h-auto" alt="lenovo" src="assets/images/lenovo-logo.png">
+	  	</div>
+
+	  	<div class="all d-flex align-items-center justify-content-center" ui-sref="catalog">Все бренды</div>
+	  </div>
   </div>
-</main>
+
+  <foot></foot>
+</div>

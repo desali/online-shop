@@ -1,3 +1,138 @@
+@import "../../colors";
+
 .home {
-  color: red;
+	header {
+		padding: 0 6rem;
+	}
+
+  .main {
+  	padding: 0 6rem;
+
+  	.categories {
+  		.col-md-4 {
+  			height: 30rem;
+
+  			&:nth-child(3n+1) {
+  				padding-left: 0 !important;
+
+  				.category {
+  					background-color: $secondBGColor;
+  				}
+			}
+			&:nth-child(2n) {
+				.category {
+					background-color: $thirdBGColor;
+				}
+			}
+			&:nth-child(3n) {
+				padding-right: 0 !important;
+
+				.category {
+					background-color: $fourthBGColor;
+				}
+			}
+			&:nth-child(4n) {
+				.category {
+					background-color: $fifthBGColor;
+				}
+			}
+			&:nth-child(5n) {
+				.category {
+					background-color: $sixthBGColor;
+				}
+			}
+			&:nth-child(6n) {
+				.category {
+					background-color: $seventhBGColor;
+				}
+			}
+  		}
+
+	 	.category {
+			border-radius: 0.25rem;
+
+			&:hover {
+				cursor: pointer;
+				transform: scale(1.03);
+				transition: transform 0.6s;
+				-webkit-transition: -webkit-transform 0.6s;
+			}
+
+			.category-image {
+				max-width: 100%;
+			}
+
+			.category-title {
+			    font-size: 2.4rem;
+			}
+		}
+  	}
+
+  	.brands {
+  		height: 10rem;
+  		position: relative;
+  		border: 1px solid lighten($firstTextColor, 50%);
+
+  		.brand {
+  			.brand-logo {
+  				max-width: 100%;
+  				max-height: 100%;
+
+  				&:hover {
+  					cursor: pointer;
+  					-webkit-animation-name: buzz;
+					animation-name: buzz;
+					-webkit-animation-duration: 0.15s;
+					animation-duration: 0.15s;
+					-webkit-animation-timing-function: linear;
+					animation-timing-function: linear;
+					-webkit-animation-iteration-count: infinite;
+					animation-iteration-count: infinite;
+  				}
+  			}
+  		}
+
+  		.all {
+	  		position: absolute;
+		    bottom: -1.2rem;
+		    left: 0;
+		    right: 0;
+		    width: 8rem;
+		    margin: auto;
+		    padding: 0.4rem;
+
+		    color: white;
+		    font-size: 1.2rem;
+		    background-color: $eighthBGColor;
+		    border-radius: 0.25rem;
+
+		    &:hover {
+		    	cursor: pointer;
+		    }
+  		}
+  	}
+  }
+}
+
+
+/* Buzz */
+@-webkit-keyframes buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
 }

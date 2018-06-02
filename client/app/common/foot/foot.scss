@@ -1,0 +1,50 @@
+@import "../../colors";
+
+.footer {
+	height: 22rem;
+	font-size: 1.2rem;
+	color: white;
+	background-color: $firstBGColor;
+	padding: 2rem 5rem;
+	cursor: default;
+
+	.logo {
+		height: 4rem;
+    	width: 12rem;
+	}
+
+	.methods {
+		.method {
+			height: auto;
+    		width: 6rem;
+		}
+	}
+
+	.title {
+		color: $secondTextColor;
+		font-size: 1.4rem;
+	}
+
+	.category,
+	.info,
+	.call-back,
+	.mail span,
+	.skype span {
+		border-bottom: 1px solid white;
+		border-bottom-style: dotted;
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.information {
+		.contact-info {
+			padding-left: 0;
+		}
+	}
+
+	.space {
+		height: 2rem;
+		width: 100%;
+	}
+}
